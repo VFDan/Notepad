@@ -5,10 +5,10 @@
 		<link rel="icon" href="Notepad.png">
 		<title>Notepad</title>
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap&subset=latin-ext" rel="stylesheet"> 
-		<link href="styles.css">
+		<link href="styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<textarea id="textarea" onkeyup="localStorage.setItem('content', document.getElementById('textarea').value)" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus></textarea>
-		<script>document.getElementById('textarea').value = localStorage.getItem('content')</script>
+		<script src="script.js"></script>
 	</body>
 </html>
