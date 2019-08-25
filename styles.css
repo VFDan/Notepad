@@ -24,8 +24,3 @@ body, textarea {
 #help:hover {
   color: #555F;
 }
-#fork {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
