@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    		<meta charset="UTF-8">
+		<meta name="description" content="A simple and free to use online notepad, that records what you typed in your web browser, and your browser 𝘰𝘯𝘭𝘺.">
+		<meta name="keywords" content="Notepad,Unicode,VFDan">
+		<link rel="icon" href="Notepad.png">
+		<title>Notepad</title>
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento:700|Fira+Code:300&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese" rel="stylesheet"> 
+		<link href="styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<textarea placeholder="Type here..." onkeyup="localStorage.setItem('content', document.getElementById('textarea').value);" label="notepad" id="textarea" data-gramm_editor="false" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus></textarea>
+		<a href="javascript:((localStorage.getItem('dark')=='false') ? localStorage.setItem('dark', true) : localStorage.setItem('dark', false));location.reload();" id="toggle">Toggle dark mode</a>
+		<script src="script.js"></script>
+	</body>
+</html>

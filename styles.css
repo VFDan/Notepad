@@ -1,0 +1,35 @@
+#textarea {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  border: 0; 
+  font-size: 3rem;
+  font-family: 'Fira Code', monospace;
+  resize: none;
+}
+.dark #textarea {
+  background-color: #181a1b;
+  color: #e8e6e3;
+}
+body, textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#toggle {
+  font-size: 2.25rem;
+  position: fixed;
+  bottom: 0;
+  right: 20px; /* Account for the scrollbar if there is one */
+  text-decoration:none;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+  color: #0d93d7;
+}
+#toggle:hover {
+  color: #0f5477;
+}
+.dark {
+  scrollbar-color: #2a2c2e #1c1e1f;
+}
